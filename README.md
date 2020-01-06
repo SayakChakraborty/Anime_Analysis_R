@@ -9,3 +9,5 @@ Implementation:
 This development has been carried out to analyze the various factors that influence the popularity or rank of a particular anime.
 The data was cleaned and shaped accordingly to carry out the analysis and infer the results.
 
+RPubs Link: http://rpubs.com/SayakChakraborty/the_world_of_anime
+
