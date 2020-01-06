@@ -11,3 +11,4 @@ The data was cleaned and shaped accordingly to carry out the analysis and infer 
 
 RPubs Link: http://rpubs.com/SayakChakraborty/the_world_of_anime
 
+Authors: Sayak Chakraborty, Vipul Mayank
