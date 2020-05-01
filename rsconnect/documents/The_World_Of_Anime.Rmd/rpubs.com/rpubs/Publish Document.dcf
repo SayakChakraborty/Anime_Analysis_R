@@ -1,0 +1,10 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/564008/ec6354feaedf4f0e858258a79be85248
+bundleId: https://api.rpubs.com/api/v1/document/564008/ec6354feaedf4f0e858258a79be85248
+url: http://rpubs.com/SayakChakraborty/564008
+when: 1588356440.93764

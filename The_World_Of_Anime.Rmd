@@ -11,13 +11,13 @@ output:
 ## 1. Synopsis
 
 ```{r Importing the Data from the URL, echo=FALSE,include=FALSE}
-tidy_anime <- data.table::fread ("D:/OneDrive - University of Cincinnati/GitHub/SayakChakraborty/Anime Analysis in R/Anime_Analysis_R/anime_data/tidy_anime.csv", stringsAsFactors = FALSE, header = TRUE)
+tidy_anime <- data.table::fread ("anime_data/tidy_anime.csv", stringsAsFactors = FALSE, header = TRUE)
 ```
 [**MyAnimeList**](https://myanimelist.net/), often abbreviated as MAL, is an anime and manga social networking and social cataloging application website. The site provides its users with a list-like system to organize and score anime and manga. It facilitates finding users who share similar tastes and provides a large database on anime and manga.
 
 Anime without rankings or popularity scores were excluded. Producers, genre, and studio were converted from lists to tidy observations, so there will be repetitions of shows with multiple producers, genres, etc.
 
-![](Anime BG 1.png)
+![](Images/Anime BG 1.png)
 
 #### **Problem Statement**
 This development has been carried out to analyse the various factors that influence the popularity or rank of a particular anime. 
@@ -29,7 +29,7 @@ The data was cleaned and shaped accordingly to carry out the analysis and infer 
 
 ## 2. Packages Required
 
-```{r Loading the required packages, echo=TRUE, results='hide', message=FALSE}
+```{r Loading the required packages, echo=TRUE, results='hide', message=FALSE, warning=FALSE, message=FALSE}
 library(tidyr)
 library(DT)
 library(ggplot2)
@@ -51,7 +51,7 @@ library(readxl)
 
 ```{r displaying the packages table, echo=FALSE}
 #Reading the variable summary excel File
-package_sum <- read_excel("D:/OneDrive - University of Cincinnati/GitHub/SayakChakraborty/Anime Analysis in R/Anime_Analysis_R/Package Summary.xlsx")
+package_sum <- read_excel("Excel Files/Package Summary.xlsx")
 
 kable(package_sum) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = F, fixed_thead = T, )
@@ -164,7 +164,7 @@ datatable(anime_final, filter = 'top')
 
 ```{r displaying the summary variables table, echo=TRUE}
 #Reading the variable summary excel File
-var_sum <- read_excel("D:/OneDrive - University of Cincinnati/UC (LCB) - MSIS/Semester 1/BANA 7025 Data Wrangling with R/Final Project/variable_summary.xlsx")
+var_sum <- read_excel("Excel Files/variable_summary.xlsx")
 
 kable(var_sum) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = F, fixed_thead = T, )
